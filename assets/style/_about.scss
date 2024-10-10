@@ -1,0 +1,228 @@
+.about-page {
+  .hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    &__banner {
+      margin: 138px 0;
+      padding: 24px 105px 32px;
+    }
+    &__title {
+      margin: 0;
+      font-size: $font-title-size;
+    }
+  }
+  .about {
+    &__inner {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 56px;
+    }
+    &__row {
+      padding-top: 70px;
+      position: relative;
+      display: flex;
+    }
+    .row-top {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .row-bottom {
+      margin-top: 105px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__card {
+      margin: auto 0;
+      // position: relative;
+    }
+    &__img {
+      border-radius: $border-radius;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .img-left {
+      top: 0;
+      left: 5%;
+      z-index: -1;
+      width: 635px;
+      height: 494px;
+    }
+    //   .img-left {
+    //     top: 56px;
+    //
+    //     left: 5%;
+    //   }
+  }
+  .team {
+    margin-top: 160px;
+    &__title {
+      margin-bottom: 56px;
+      text-align: center;
+      color: $accent;
+      font-size: $font-heading2-size;
+    }
+    &__row {
+      display: grid;
+      gap: 29px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__person {
+      max-width: 394px;
+      height: 360px;
+
+      position: relative;
+    }
+    &__photo {
+      position: relative;
+      z-index: 1;
+      max-width: 394px;
+      height: 360px;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      overflow: hidden;
+      border-radius: $border-radius;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.05%;
+        z-index: 1;
+      }
+    }
+    img {
+      border-radius: $border-radius;
+      height: 360px;
+    }
+    &__info {
+      box-shadow: $box-shadow;
+      border-radius: $border-radius;
+      position: absolute;
+      bottom: -15%;
+      left: 50%;
+      z-index: 2;
+      transform: translateX(-50%);
+      background-color: $light;
+      padding: 16px;
+      width: 90%;
+    }
+  }
+  .call {
+    margin-top: 150px;
+    &__inner {
+      display: flex;
+      position: relative;
+      font-size: $font-subtitle1-size;
+      font-weight: $font-subtitle1-wight;
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+      position: relative;
+      border-radius: $border-radius;
+      background-color: $accent;
+      width: 1016px;
+      height: 112px;
+      padding: 32px 60px;
+    }
+    &__text {
+      max-width: 450px;
+
+      text-align: center;
+      // padding: 0 60px;
+      color: $white;
+    }
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      position: absolute;
+      content: "";
+      top: 6px;
+      right: 0;
+      z-index: 1;
+      width: 298px;
+      // height: 94px;
+
+      background-color: $light;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+    }
+    &__phone {
+      color: $accent;
+    }
+    &__icons {
+      cursor: pointer;
+      padding: 16px 32px;
+      border-radius: $border-radius;
+      background-color: $blue-light;
+    }
+    &__icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .values {
+    margin-top: 100px;
+    &__inner {
+      // margin-top: 100px;
+      background-image: url(../img/bg-values.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &__title {
+      text-align: center;
+      color: $accent;
+    }
+    &__wrapper {
+      padding: 70px 0;
+    }
+
+    &__cards {
+      // margin-top: 112px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 48px 32px;
+    }
+    &__card {
+      padding: 48px 32px 51px;
+      position: relative;
+      color: $dark;
+      border-radius: $border-radius;
+      background-color: $light;
+      box-shadow: 1px 5px 16px 0px rgba(176, 176, 176, 0.4);
+      text-align: center;
+    }
+    .card__icon {
+      width: 64px;
+      height: 72px;
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .card__title {
+      margin: 12px 0 16px;
+      font-size: $font-subtitle2-size;
+      font-weight: $font-subtitle1-wight;
+    }
+    .card__text {
+      line-height: 1.4;
+    }
+  }
+}

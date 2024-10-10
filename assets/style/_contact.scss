@@ -1,0 +1,98 @@
+.contact-page {
+  .btn-contact {
+    display: block;
+    width: fit-content;
+    padding: 16px 32px;
+  }
+  .hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    &__banner {
+      margin: 138px 0;
+      padding: 24px 87px 32px;
+    }
+    &__title {
+      margin: 0;
+      font-size: $font-title-size;
+    }
+  }
+  .info {
+    padding: 64px 0;
+    text-align: center;
+    background-color: $accent;
+    &__text {
+      display: inline-block;
+      max-width: 816px;
+      font-size: $font-subtitle1-size;
+      font-weight: $font-subtitle1-wight;
+      color: $white;
+    }
+  }
+  .contacts {
+    margin: 100px 0;
+
+    &__inner {
+      display: flex;
+      position: relative;
+    }
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 3;
+      padding: 40px 0;
+      gap: 16px;
+    }
+  }
+  .contact {
+    &__card {
+      position: relative;
+      z-index: 1;
+      height: 146px;
+      width: 498px;
+      display: flex;
+      align-items: center;
+      padding: 24px 0 24px 123px;
+      background-color: $light;
+      box-shadow: $box-shadow;
+      border-radius: $border-radius;
+      color: $dark;
+    }
+    &__icon {
+      margin-right: 32px;
+      border-radius: $border-radius;
+      padding: 8px;
+      height: 48px;
+      width: 48px;
+      background-color: $accent;
+    }
+    &__title {
+      margin-bottom: 16px;
+      font-family: "Arsenal", sans-serif;
+      font-weight: $font-title-wight;
+      font-size: $font-heading3-size;
+    }
+    &__mail {
+      color: $dark;
+      text-decoration-line: underline;
+    }
+    &__phone {
+      color: $dark;
+    }
+
+    &__frame-wrapper {
+      overflow: hidden;
+      max-width: 800px;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: 0;
+    }
+    &__map {
+      border-radius: $border-radius;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,356 @@
+.services-page {
+  .btn-contact {
+    display: block;
+    width: fit-content;
+    padding: 16px 32px;
+  }
+  .hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    &__banner {
+      margin: 138px 0;
+      padding: 24px 87px 32px;
+    }
+    &__title {
+      margin: 0;
+      font-size: $font-title-size;
+    }
+  }
+  // info
+  // ============================
+  .info {
+    padding: 64px 0;
+    text-align: center;
+    background-color: $accent;
+    &__text {
+      display: inline-block;
+      max-width: 816px;
+      font-size: $font-subtitle1-size;
+      font-weight: $font-subtitle1-wight;
+      color: $white;
+    }
+  }
+  // tabs
+  // =========================
+  .tabs {
+    margin-top: 100px;
+    &__inner {
+      display: flex;
+      gap: 32px;
+    }
+    &__wrapper {
+      max-width: 392px;
+      width: 100%;
+      height: fit-content;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 32px;
+      border-radius: $border-radius;
+      background-color: $accent;
+      box-shadow: $box-shadow;
+    }
+    &__items {
+      //   max-width: 816px;
+      width: 100%;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    &__title {
+      padding: 24px 0;
+      cursor: pointer;
+      font-size: 24px;
+      border-radius: $border-radius;
+      font-weight: $font-heading3-wight;
+      color: $light;
+      background-color: $accent;
+      box-shadow: 50px 18px 32px 0px rgba(0, 0, 0, 0.05),
+        22px 8px 24px 0px rgba(0, 0, 0, 0.09),
+        6px 2px 13px 0px rgba(0, 0, 0, 0.1);
+    }
+    &__subtitle {
+      color: $accent;
+    }
+    &__text {
+      padding-top: 12px;
+      margin-top: 12px;
+      border-top: 1px solid #9f9f9f;
+    }
+  }
+
+  .active-tab {
+    background-color: rgba(47, 61, 99, 0.15);
+    border: 2px solid #cbe2ff;
+  }
+  .hidden-tabs-item {
+    display: none;
+  }
+
+  //   drop
+  .tabs__btn-drop {
+    text-align: center;
+    min-width: 303px;
+    width: 100%;
+    color: $white;
+    border: 2px solid #cbe2ff;
+
+    border-radius: $border-radius;
+    background-color: rgba(47, 61, 99, 0.15);
+    box-shadow: $box-shadow;
+    padding: 20px 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .tabs__dropdown {
+    border-radius: $border-radius;
+
+    padding: 16px;
+    background-color: $accent;
+    position: relative;
+    display: inline-block;
+  }
+
+  .tabs__drop-content {
+    text-align: center;
+    padding: 16px;
+    border-radius: $border-radius;
+    background-color: $accent;
+    box-shadow: 50px 18px 32px 0px rgba(0, 0, 0, 0.05),
+      22px 8px 24px 0px rgba(0, 0, 0, 0.09), 6px 2px 13px 0px rgba(0, 0, 0, 0.1);
+
+    display: none;
+    position: absolute;
+    // min-width: 303px;
+    width: 95%;
+    overflow: auto;
+    z-index: 1;
+  }
+  .tabs__arrow {
+    width: 20px;
+    height: 20px;
+    float: right;
+    // padding-right: 10px;
+  }
+
+  .tabs__drop-content a {
+    // box-shadow: $box-shadow;
+
+    color: $white;
+
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .tabs__drop-list:hover {
+    cursor: pointer;
+    width: 100%;
+    border-radius: $border-radius;
+    background-color: $light;
+  }
+  .tabs__drop-list a:hover {
+    color: $black;
+  }
+
+  .tabs__dropdown {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+
+  // =============================
+  .acardion {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+  .accordion {
+    background-color: #f7f8f9;
+    color: $black;
+    cursor: pointer;
+    padding: 23px 0 23px 40px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    border-radius: $border-radius;
+    font-weight: $font-heading3-wight;
+    box-shadow: $box-shadow;
+    transition: 0.4s;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: $white;
+  }
+
+  .panel {
+    // padding: 0 18px;
+    display: none;
+    // background-color: white;
+    overflow: hidden;
+  }
+  .accordion {
+    padding-right: 40px;
+  }
+  .btn-acardion {
+    float: right;
+    width: 24px;
+    height: 24px;
+  }
+
+  // call
+  // =====================
+  .call {
+    // margin-top: 150px;
+    &__inner {
+      display: flex;
+      position: relative;
+      font-size: $font-subtitle1-size;
+      font-weight: $font-subtitle1-wight;
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+      position: relative;
+      border-radius: $border-radius;
+      background-color: $accent;
+      width: 592px;
+      // width: 100%;
+      // max-width: 592px;
+      // width: 100%;
+      height: 112px;
+    }
+    &__text {
+      // width: 500px;
+      width: 80%;
+      text-align: center;
+      // padding: 24px 32px;
+      // padding: 24px;
+      color: $white;
+    }
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      position: absolute;
+      content: "";
+      top: 7px;
+      right: 0;
+      z-index: 1;
+      width: 298px;
+      height: 96px;
+
+      background-color: $light;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+    }
+    &__phone {
+      color: $accent;
+    }
+    &__icons {
+      cursor: pointer;
+      padding: 16px 32px;
+      border-radius: $border-radius;
+      background-color: $blue-light;
+    }
+    &__icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  // .reviews
+  // =====================
+  .reviews {
+    margin-top: 100px;
+    text-align: center;
+    &__inner {
+      margin: 0 auto;
+      max-width: 1500px;
+      width: 100%;
+    }
+    &__title {
+      color: $accent;
+    }
+    .reviews-slider {
+      margin: 0 15px;
+      padding: 0 15px;
+    }
+
+    .swiper-slide {
+      border-radius: $border-radius;
+      margin-top: 56px;
+      box-shadow: 3px 1px 6px 0px rgba(176, 176, 176, 0.4);
+      background-color: $light;
+      padding: 24px 34px;
+      width: 600px;
+      min-height: 225px;
+    }
+    &__slider-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      gap: 24px;
+    }
+    &__decor {
+      width: 72px;
+      height: 64px;
+    }
+    &__quotes {
+      // width: 40px;
+      // height: 32px;
+      content: "";
+      position: absolute;
+      border-radius: $border-radius;
+      top: -4px;
+      right: -4px;
+      z-index: 3;
+      background-color: $accent;
+      padding: 16px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &__name {
+      font-size: $font-subtitle2-size;
+      font-weight: $font-btn-wight;
+    }
+    &__text {
+      margin: 24px 0;
+    }
+
+    &__star {
+      margin: 0 auto;
+      height: 16px;
+      width: 80px;
+    }
+  }
+  .citation {
+    margin: 40px 0;
+    height: 413px;
+  }
+  .citation__text {
+    // min-width: 492px;
+    padding: 56px;
+    font-family: "Arsenal", sans-serif;
+    font-size: $font-heading3-size !important;
+    // font-weight: $font-title-wight !important;
+  }
+  .btn-card {
+    background-color: $blue-light;
+  }
+}
